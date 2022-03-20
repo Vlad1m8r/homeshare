@@ -1,4 +1,12 @@
 .info {
-    font-size: 16px;
+    height: 100%;
+    font-size: 14px;
+    margin: 19px;
+}
 
+.info .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px 0;
 }

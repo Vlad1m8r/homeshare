@@ -21,8 +21,12 @@ const App = () => {
         <div className={"app"}>
             {isLoaded
                 ? <div className={"app__section"}>
-                    <Map center={Dcenter}/>
-                    <Sidebar/>
+                    <div className={"section_map"}>
+                        <Map center={Dcenter}/>
+                    </div>
+                    <div className={"section_sidebar"}>
+                        <Sidebar/>
+                    </div>
                 </div>
                 : <h2>Loading</h2>}
         </div>
