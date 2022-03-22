@@ -21,9 +21,10 @@ const App = () => {
 
     return (
 
-        <BrowserRouter>
+        <BrowserRouter  basename={"http://dayhome.ru"} children={<Home/>}>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <div>AFASDAS</div>
+                <Route path="/" element={<Home />}/>
             </Routes>
         </BrowserRouter>
     )
