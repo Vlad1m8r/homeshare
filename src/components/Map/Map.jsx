@@ -7,6 +7,22 @@ const containerStyle = {
     height: '100%'
 };
 
+const defaultOption = {
+    panControl: true,
+    zoomControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    rotateControl: false,
+    keyboardShortcuts: false,
+    scrollwheel: true,
+    disableDoubleClickZoom: true,
+    // allowFullScreen: true,
+    // fullscreenControlOptions: true
+    fullscreenControl: false
+
+}
+
 const Map = ({center}) => {
 
     const mapRef = useRef(undefined);
@@ -23,9 +39,11 @@ const Map = ({center}) => {
         <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
-            zoom={10}
+            zoom={7}
             onLoad={onLoad}
             onUnmount={onUnmount}
+            options={defaultOption}
+            tilt={2}
         >
             { /* Child components, such as markers, info windows, etc. */ }
             <></>
