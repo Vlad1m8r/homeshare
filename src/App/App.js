@@ -23,7 +23,7 @@ const App = () => {
 
         <BrowserRouter basename={"http://dayhome.ru/"}>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="http://dayhome.ru/" element={<Home />} />
             </Routes>
         </BrowserRouter>
     )
