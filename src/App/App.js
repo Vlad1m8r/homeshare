@@ -1,6 +1,3 @@
-import {Map} from "../components/Map"
-import {useJsApiLoader} from "@react-google-maps/api";
-import {Sidebar} from "../components/Sidebar";
 import "./app.css"
 import {
     BrowserRouter,
@@ -8,46 +5,16 @@ import {
     Route,
     Link,
 } from "react-router-dom";
-
-const API_KEY = process.env.REACT_APP_API_KEY
-
-const Dcenter = {
-    lat: -3.745,
-    lng: -38.523
-};
+import {Home} from "../Home/Home";
 
 const App = () => {
-
-
     return (
-
-        <BrowserRouter  basename={"http://dayhome.ru"} children={<Home/>}>
+        <BrowserRouter>
             <Routes>
-                <div>AFASDAS</div>
-                <Route path="/" element={<Home />}/>
+                <Route path="/" element={<Home/>}/>
             </Routes>
         </BrowserRouter>
     )
 }
 
 export default App;
-
-function Home() {
-    const {isLoaded} = useJsApiLoader({
-        id: 'google-map-script',
-        googleMapsApiKey: API_KEY
-    })
-
-    return <div className={"app"}>
-        {isLoaded
-            ? <div className={"app__section"}>
-                <div className={"section_map"}>
-                    <Map center={Dcenter}/>
-                </div>
-                <div className={"section_sidebar"}>
-                    <Sidebar/>
-                </div>
-            </div>
-            : <h2>Loading</h2>}
-    </div>;
-}

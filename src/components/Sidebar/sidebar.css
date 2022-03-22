@@ -5,4 +5,5 @@
     flex-direction: column;
     flex-basis: 20vw;
     justify-content: space-between;
+    background-color: transparent;
 }

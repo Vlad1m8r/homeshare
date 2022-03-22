@@ -1,0 +1,43 @@
+.section {
+  position: relative;
+}
+
+
+.section .section__map {
+  width: 100vw;
+  
+}
+
+.section .section__sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28vw;
+}
+
+@media (min-width: 1439px) {
+  .section .section__sidebar {
+    width: 25vw;
+
+  }
+}
+
+@media (min-width: 1750px) {
+  .section .section__sidebar {
+    width: 20vw;
+
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section .section__sidebar {
+    display:  none;
+    position: relative;
+    width: 300px;
+  }
+}

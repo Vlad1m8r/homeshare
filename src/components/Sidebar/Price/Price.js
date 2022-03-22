@@ -1,15 +1,18 @@
 import "./price.css"
 
-const Price = () => {
+const dict = {
+    "day" : "₽/ночь"
+}
 
-    return <div className={"price-bar"}>
-        <p className={"rent"}>
-            Снять
-        </p>
-        <div>
-            <div className={"price_rent"}>2500</div>
-            <br/>
-            <div className={"price_rent_day"}>₽/ночь</div>
+const Price = ({price, tariff, buttonStatus}) => {
+
+    return <div className={"price-container"}>
+        <div className={"rent"}>
+            {buttonStatus? "Снять":"Забронировать"}
+        </div>
+        <div className={"price-container__price_tariff"}>
+            <div className={"price_rent"}>{price}</div>
+            <div className={"price_tariff"}>{dict[tariff]}</div>
         </div>
     </div>
 }

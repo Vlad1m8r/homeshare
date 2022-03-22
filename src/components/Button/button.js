@@ -1,11 +1,11 @@
 import "./button.css"
 
 
-const Button = (props) => {
+const Button = ({name, stateButtonStatus}) => {
 
-    return <div className={"button"}>
-        {props.name}
-    </div>
+    return <button className={"button"}>
+        {name}
+    </button>
 
 }
 

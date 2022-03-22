@@ -1,33 +1,81 @@
-.price-bar {
-    height: 70px;
+.price-container {
+    font-family: 'Manrope', serif, Manrope;
+    font-style: normal;
+    font-weight: 700;
+    height: 5vmax;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background: linear-gradient(90deg, #00EEA0 28.13%, #80F384 80.73%);
-    border-radius: 9px;
+    border-radius: 15px;
 
 }
 
-.price-bar .rent {
-    font-family: 'Manrope', serif, Manrope;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 72.69%;
+.price-container .rent {
+    margin: 1vmax 0;
+    font-size: 1.3vmax;
 }
 
-.price-bar .price_rent {
-    font-family: 'Manrope', serif, Manrope;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 72.69%;
+.price-container .price_rent {
+    font-size: 1.2vmax;
 }
 
-.price-bar .price_rent_day {
-    font-family: 'Open Sans', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 72.69%;
+.price-container .price_tariff {
+    font-size: 1vmax;
+}
+
+.price-container .price-container__price_tariff {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1750px) {
+    .price-container .rent {
+        font-size: 1.5vmax;
+    }
+
+    .price-container .price_rent {
+        font-size: 1.3vmax;
+    }
+
+    .price-container .price_tariff {
+        font-size: 1.1vmax;
+    }
+}
+
+@media (max-width: 1440px) {
+    .price-container .rent {
+        font-size: 1.7vmax;
+    }
+
+
+    .price-container .price_rent {
+        font-size: 1.4vmax;
+    }
+
+    .price-container .price_tariff {
+        font-size: 1.2vmax;
+    }
+
+    .price-container {
+        height: 8vmax;
+    }
+}
+
+@media (max-width: 1025px) {
+    .price-container .rent {
+        font-size: 1.8vmax;
+    }
+
+    .price-container .price_rent {
+        font-size: 1.6vmax;
+    }
+
+    .price-container .price_tariff {
+        font-size: 1.55vmax;
+    }
+
+    .price-container {
+        height: 10vmax;
+    }
 }
