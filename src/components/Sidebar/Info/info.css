@@ -5,7 +5,7 @@
     border-radius: 15px;
     background-color: #FFFFFF;
     position: relative;
-    font-family: 'Manrope', serif;
+    font-family: 'Open Sans', serif;
 }
 
 .info .buttons {
@@ -17,19 +17,20 @@
 
 .info .info__title {
     margin: 1vmax 0;
-    font-size: 1.5vmax;
+    font-size: 1vmax;
+    font-weight: 700;
 }
 
 .info .info__description {
-    font-size: 0.8vmax;
+    font-size: 0.7vmax;
     text-align: justify;
 }
 
 .info .info__more {
     font-size: 17px;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     margin: 0 15px 10px 0;
 }
 
@@ -40,11 +41,11 @@
 @media (max-width: 1750px) {
     .info .info__title {
         margin: 1.5vmax 0;
-        font-size: 2vmax;
+        font-size: 1.7vmax;
     }
 
     .info .info__description {
-        font-size: 1.1vmax;
+        font-size: 0.8vmax;
     }
 
     .info .info__more {
@@ -58,7 +59,7 @@
     }
 
     .info .info__description {
-        font-size: 1.15vmax;
+        font-size: 0.95vmax;
     }
 
     .info .info__more {
@@ -69,11 +70,16 @@
 @media (max-width: 1025px) {
     .info .info__title {
         margin: 1.5vmax 0;
-        font-size: 2.3vmax;
+        font-size: 2vmax;
     }
 
     .info .info__description {
-        font-size: 1.5vmax;
+        font-size: 1.2vmax;
+    }
+}
+@media (max-width: 769px) {
+    .info .info__description {
+        font-size: 1.6vmax;
     }
 }
 
@@ -92,7 +98,7 @@
         content: "";
         position: absolute;
         left: 0;
-        bottom: 0px;
+        bottom: 0;
         width: 100%;
         height: 120px;
         background: linear-gradient(180deg, transparent, #FFFFFF 50%);

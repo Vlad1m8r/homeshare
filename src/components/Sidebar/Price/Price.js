@@ -8,7 +8,7 @@ const Price = ({price, tariff}) => {
 
     return <div className={"price-container"}>
         <div className={"rent"}>
-            "Снять"
+            Снять
         </div>
         <div className={"price-container__price_tariff"}>
             <div className={"price_rent"}>{price}</div>

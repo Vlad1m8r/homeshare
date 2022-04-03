@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/open_sans/OpenSans-Bold.woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/open_sans/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/open_sans/OpenSans-Light.woff");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+
 body {
     margin: 0;
     padding: 0;
