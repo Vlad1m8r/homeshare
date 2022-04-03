@@ -4,11 +4,11 @@ const dict = {
     "day" : "₽/ночь"
 }
 
-const Price = ({price, tariff, buttonStatus}) => {
+const Price = ({price, tariff}) => {
 
     return <div className={"price-container"}>
         <div className={"rent"}>
-            {buttonStatus? "Снять":"Забронировать"}
+            "Снять"
         </div>
         <div className={"price-container__price_tariff"}>
             <div className={"price_rent"}>{price}</div>

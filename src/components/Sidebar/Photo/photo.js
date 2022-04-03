@@ -1,11 +1,16 @@
 import "./photo.css"
 
+const photo = {
+    src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/295458999.jpg?k=a4de23b0d13983a7c7729add472e98fe77d063c1b6b592ca4d6d82286ee541ae&o=&hp=1",
+    alt: "SineShine"
+}
+
 const Photo = () => {
 
     return <div className={"photo-container"}>
-        <img  className={"container__photo"}
-            src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/295458999.jpg?k=a4de23b0d13983a7c7729add472e98fe77d063c1b6b592ca4d6d82286ee541ae&o=&hp=1"
-            alt="SineShine"/>
+        <img className={"container__photo"}
+             src={photo.src}
+             alt={photo.src}/>
     </div>
 }
 

@@ -2,3 +2,9 @@
     width: 100%;
     height: 100vh;
 }
+
+.container .marker {
+    background: linear-gradient(180deg, #00EEA0 28.13%, #80F384 80.73%);
+    border-radius: 53px;
+    width: 65px;
+}

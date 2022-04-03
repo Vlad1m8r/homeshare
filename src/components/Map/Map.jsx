@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import {GoogleMap} from "@react-google-maps/api";
+import {GoogleMap, Marker} from "@react-google-maps/api";
 import  "./Map.css"
 
 const containerStyle = {
@@ -17,10 +17,9 @@ const defaultOption = {
     keyboardShortcuts: false,
     scrollwheel: true,
     disableDoubleClickZoom: true,
-    // allowFullScreen: true,
-    // fullscreenControlOptions: true
-    fullscreenControl: false
-
+    fullscreenControl: false,
+    minZoom: 3,
+    maxZoom: 15
 }
 
 const Map = ({center}) => {
@@ -39,14 +38,15 @@ const Map = ({center}) => {
         <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
-            zoom={7}
+            zoom={3}
             onLoad={onLoad}
             onUnmount={onUnmount}
             options={defaultOption}
             tilt={2}
         >
-            { /* Child components, such as markers, info windows, etc. */ }
-            <></>
+            <Marker position={{ lat: -34.397, lng: 150.644 }} label={{className:"marker", text:"2500", fontSize:"18px"}} options={{}} icon={"false"} />
+            <Marker position={{ lat: -34.450, lng: 150.600 }} label={{className:"marker", text:"5435", fontSize:"18px"}} options={{}} icon={"false"} />
+            <Marker position={{ lat: -34.600, lng: 150.700 }} label={{className:"marker", text:"400", fontSize:"18px"}} options={{}} icon={"false"} />
         </GoogleMap>
     </div>
 }

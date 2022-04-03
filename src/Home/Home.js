@@ -5,22 +5,22 @@ import "./home.css"
 
 const API_KEY = process.env.REACT_APP_API_KEY
 
-const Dcenter = {
-    lat: -3.745,
-    lng: -38.523
+const startPoint = {
+    lat: -34.397,
+    lng: 150.644
 };
 
 export const Home = () => {
-    const {isLoaded} = useJsApiLoader({
+    const {isLoaded, isError} = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey: API_KEY
     })
-
+    console.log(isError)
     return <div>
         {isLoaded
             ? <div className={"section"}>
                 <div className={"section__map"}>
-                    <Map center={Dcenter}/>
+                    <Map center={startPoint}/>
                 </div>
                 <div className={"section__sidebar"}>
                     <Sidebar/>

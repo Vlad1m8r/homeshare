@@ -2,7 +2,6 @@ import "./sidebar.css"
 import {Photo} from "./Photo/photo";
 import {Info} from "./Info/info";
 import {Price} from "./Price/Price";
-import {useState} from "react";
 
 const data = {
     name: "Солнечные аппартаменты",
@@ -15,7 +14,6 @@ const data = {
 }
 
 const Sidebar = () => {
-    const [buttonStatus, stateButtonStatus] = useState(true)
 
     return <div className={"sidebar"}>
         <Photo/>
@@ -26,7 +24,6 @@ const Sidebar = () => {
         <Price
             price={data.price}
             tariff={data.tariff}
-            buttonStatus={buttonStatus}
         />
     </div>
 }
